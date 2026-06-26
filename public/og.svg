@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0B1F36"/>
+  <circle cx="980" cy="120" r="260" fill="#1FA463" opacity="0.25"/>
+  <circle cx="220" cy="560" r="280" fill="#2A6CFF" opacity="0.14"/>
+  <g opacity="0.12">
+    <path d="M0 130H1200M0 260H1200M0 390H1200M0 520H1200" stroke="white"/>
+    <path d="M150 0V630M300 0V630M450 0V630M600 0V630M750 0V630M900 0V630M1050 0V630" stroke="white"/>
+  </g>
+  <rect x="80" y="90" width="86" height="86" rx="24" fill="#1FA463"/>
+  <path d="M108 148V118L123 109L138 118V148L123 157L108 148Z" stroke="white" stroke-width="6"/>
+  <text x="80" y="250" fill="white" font-family="Arial, sans-serif" font-size="78" font-weight="800">The Digital Plant</text>
+  <text x="82" y="326" fill="#9DE7BF" font-family="Arial, sans-serif" font-size="36" font-weight="700">Where Industrial Intelligence Meets AI</text>
+  <text x="82" y="420" fill="#D7E2F0" font-family="Arial, sans-serif" font-size="32">Industrial AI • Analytics • Reliability • Automation</text>
+</svg>
