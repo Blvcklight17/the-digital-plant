@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Analytics from "../components/Analytics";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "../data/site";
 
 export const metadata = {
@@ -64,6 +65,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
