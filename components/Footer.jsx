@@ -12,6 +12,7 @@ export default function Footer() {
         </div>
         <div>
           <p><Link href="/articles">Articles</Link></p>
+          <p><Link href="/publications">Industry Reading Room</Link></p>
           <p><Link href="/tools">Engineering Tools</Link></p>
           <p><Link href="/resources">Resources</Link></p>
           <p><Link href="/rss.xml">RSS</Link></p>

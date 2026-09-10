@@ -11,6 +11,7 @@ export default function Header() {
 
         <nav className="nav-links">
           <Link href="/articles">Articles</Link>
+          <Link href="/publications">Publications</Link>
           <Link href="/categories">Categories</Link>
           <Link href="/tools">Tools</Link>
           <Link href="/labs">Labs</Link>
