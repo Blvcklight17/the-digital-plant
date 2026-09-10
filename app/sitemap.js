@@ -7,6 +7,7 @@ export default function sitemap() {
   const routes = [
     "",
     "/articles",
+    "/publications",
     "/categories",
     "/tools",
     "/labs",

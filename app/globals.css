@@ -88,7 +88,7 @@ button, input, textarea {
 
 .nav-links {
   display: flex;
-  gap: 22px;
+  gap: 16px;
   align-items: center;
   color: #263244;
   font-weight: 650;
@@ -1189,6 +1189,88 @@ th {
   .hero-panel-tags {
     width: calc(100% - 36px);
   }
+}
+
+/* Industry reading room */
+.reading-room-heading {
+  padding: 34px 0 40px;
+  background: var(--navy);
+  color: white;
+}
+.reading-room-edition {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid #ffffff30;
+  padding-bottom: 20px;
+  margin-bottom: 26px;
+  color: #b8cbdc;
+  font-size: .875rem;
+  letter-spacing: .1em;
+  line-height: 1.6;
+}
+.reading-room-heading h1 { font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.08; }
+.reading-room-heading h1 span { color: #69e5a3; }
+.reading-room-heading p { max-width: 720px; color: #c7d4e0; line-height: 1.7; font-size: 1.125rem; }
+.reading-room-counts { display: flex; gap: 24px; flex-wrap: wrap; color: #c7d4e0; font-size: .875rem; }
+.reading-room-counts strong { color: white; margin-right: 4px; }
+.reading-room-body { padding: 30px 0 64px; }
+.publication-controls { background: white; border: 1px solid var(--line); padding: 24px; border-radius: 18px; }
+.publication-fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, .4fr); gap: 18px; }
+.publication-fields label { display: grid; gap: 9px; font-size: .875rem; font-weight: 750; }
+.publication-fields input, .publication-fields select {
+  width: 100%; min-width: 0; min-height: 48px; border: 1px solid #a8b3c0; border-radius: 9px;
+  padding: 12px; color: var(--ink); background: white; font: inherit; font-size: 1rem;
+}
+.publication-topics { border: 0; padding: 0; margin: 20px 0 0; min-width: 0; }
+.publication-topics legend { margin-bottom: 10px; font-size: .875rem; font-weight: 750; }
+.publication-topics > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.publication-topics button { border: 1px solid var(--line); border-radius: 999px; background: var(--soft); color: var(--ink); padding: 10px 14px; min-height: 44px; font-size: .875rem; cursor: pointer; }
+.publication-topics button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: white; }
+.reading-room :is(a, button, input, select, summary):focus-visible { outline: 3px solid #16804d; outline-offset: 4px; }
+.publication-result-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 0; font-size: .875rem; }
+.publication-result-bar p { font-weight: 700; }
+.publication-result-bar span { color: #526172; font-weight: 400; }
+.publication-result-bar button { border: 0; background: transparent; text-decoration: underline; cursor: pointer; padding: 10px 0; color: var(--navy); }
+.publication-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.publication-card { min-width: 0; background: white; border: 1px solid var(--line); border-top: 3px solid var(--green-dark); border-radius: 0 0 16px 16px; padding: 26px; display: flex; flex-direction: column; scroll-margin-top: 100px; }
+.publication-source { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; font-size: .875rem; line-height: 1.5; }
+.publication-source time { color: #526172; }
+.publication-type { color: #526172; font-size: .875rem; margin: 16px 0 10px; }
+.publication-card h2 { font-size: 1.55rem; line-height: 1.2; letter-spacing: -.035em; color: var(--navy); overflow-wrap: anywhere; }
+.publication-card h2 a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.publication-card p { color: #465566; line-height: 1.65; font-size: 1rem; }
+.publication-takeaway { border-left: 3px solid var(--green-dark); padding: 14px 16px; background: #f0f8f3; margin: 4px 0 18px; }
+.publication-takeaway h3 { font-size: .875rem; letter-spacing: 0; line-height: 1.5; color: #12673e; }
+.publication-takeaway p { margin: 7px 0 0; color: #244335; }
+.publication-context { margin-bottom: 22px; font-size: .875rem; line-height: 1.6; }
+.publication-context summary { cursor: pointer; color: #526172; padding: 4px 0; }
+.publication-context p { font-size: .875rem; }
+.publication-context a { text-decoration: underline; }
+.publication-links { display: grid; gap: 14px; margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); line-height: 1.5; }
+.publication-links a { width: fit-content; text-decoration: underline; text-underline-offset: 4px; font-size: .875rem; }
+.publication-links .publication-read { font-size: 1rem; color: #12673e; font-weight: 800; }
+.publication-empty { padding: 36px 24px; text-align: center; background: white; border: 1px dashed #a8b3c0; border-radius: 14px; }
+.publication-empty h2 { font-size: 1.5rem; line-height: 1.3; }
+.publication-empty p { line-height: 1.6; color: #526172; }
+.reading-room-note { padding-top: 30px; margin-top: 30px; border-top: 1px solid var(--line); max-width: 850px; }
+.reading-room-note h2 { font-size: 1.25rem; letter-spacing: -.02em; }
+.reading-room-note p { color: #526172; font-size: .875rem; line-height: 1.7; }
+.reading-room-promo { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; padding: 36px; border: 1px solid #bfd5ca; border-radius: var(--radius); background: #ecf5ef; }
+.reading-room-promo .eyebrow { color: #12673e; font-size: .875rem; }
+.reading-room-promo h2 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 12px; }
+.reading-room-promo p { line-height: 1.7; color: #465566; }
+.reading-room-promo .button { background: #12673e; }
+.reading-room-promo ul { margin: 0; padding: 0; list-style: none; align-self: center; }
+.reading-room-promo li + li { border-top: 1px solid #c7d8ce; margin-top: 14px; padding-top: 14px; }
+.reading-room-promo li a { display: block; font-weight: 700; line-height: 1.45; }
+.reading-room-promo li a:hover { text-decoration: underline; }
+.reading-room-promo li span { display: block; color: #12673e; font-size: .875rem; margin-bottom: 5px; }
+@media (max-width: 760px) {
+  .publication-fields, .publication-grid, .reading-room-promo { grid-template-columns: 1fr; }
+  .publication-card, .publication-controls, .reading-room-promo { padding: 20px; }
+  .reading-room-heading { padding-top: 24px; }
 }
 
 /* v0.4.6 wider interactive hero */

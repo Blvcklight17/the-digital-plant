@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const resources = [
   {
     title: "Maintenance KPI Worksheet",
@@ -47,6 +49,7 @@ export default function ResourcesPage() {
             <p className="lead">Templates, checklists, and references for engineers building smarter industrial systems.</p>
           </div>
         </div>
+        <p className="lead">Looking for industry research? <Link href="/publications" style={{textDecoration: "underline"}}>Visit the Industry Reading Room →</Link></p>
         <div className="grid three">
           {resources.map((resource) => (
             <div className="card" key={resource.title}>

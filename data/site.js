@@ -1,4 +1,4 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://thedigitalplant.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://thedigitalplant.org";
 
 export const siteConfig = {
   name: "The Digital Plant",

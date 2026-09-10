@@ -3,6 +3,7 @@ import ArticleCard from "../components/ArticleCard";
 import NewsletterSignup from "../components/NewsletterSignup";
 import HeroVisual from "../components/HeroVisual";
 import { getAllArticles } from "../lib/articles";
+import publications from "../data/publications.json";
 
 export default function HomePage() {
   const articles = getAllArticles().slice(0, 3);
@@ -33,6 +34,22 @@ export default function HomePage() {
       </section>
 
       <section className="section">
+        <div className="container reading-room-promo">
+          <div>
+            <div className="eyebrow">New · Industry Reading Room</div>
+            <h2>Big ideas. Original sources.</h2>
+            <p>Explore selected publications from Siemens, Microsoft, NVIDIA, Rockwell Automation, and the World Economic Forum, with practical takeaways for your plant.</p>
+            <Link className="button" href="/publications">Explore the reading room →</Link>
+          </div>
+          <ul aria-label="Selected publications">
+            {publications.slice(0, 3).map((publication) => (
+              <li key={publication.id}><Link href={`/publications#${publication.id}`}><span>{publication.publisher}</span>{publication.title}</Link></li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="section" style={{paddingTop: 0}}>
         <div className="container">
           <div className="section-header">
             <div>
