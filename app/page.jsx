@@ -38,7 +38,7 @@ export default function HomePage() {
           <div>
             <div className="eyebrow">New · Industry Reading Room</div>
             <h2>Big ideas. Original sources.</h2>
-            <p>Explore selected publications from Siemens, Microsoft, NVIDIA, Rockwell Automation, and the World Economic Forum, with practical takeaways for your plant.</p>
+            <p>Explore selected publications from Siemens, Microsoft, NVIDIA, Rockwell Automation, ABB, and the World Economic Forum, with practical takeaways for your plant.</p>
             <Link className="button" href="/publications">Explore the reading room →</Link>
           </div>
           <ul aria-label="Selected publications">
