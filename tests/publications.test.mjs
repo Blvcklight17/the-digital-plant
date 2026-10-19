@@ -7,7 +7,7 @@ import { filterPublications, publicationDate } from "../lib/publications.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const publications = JSON.parse(fs.readFileSync(path.join(root, "data/publications.json"), "utf8"));
-const allowedHosts = new Set(["www.microsoft.com", "news.microsoft.com", "www.weforum.org", "www.rockwellautomation.com", "nvidianews.nvidia.com", "press.siemens.com"]);
+const allowedHosts = new Set(["www.microsoft.com", "news.microsoft.com", "www.weforum.org", "www.rockwellautomation.com", "nvidianews.nvidia.com", "press.siemens.com", "new.abb.com"]);
 
 test("entries have unique identifiers, verified publisher links, and real internal destinations", () => {
   assert.equal(new Set(publications.map((item) => item.id)).size, publications.length);
@@ -49,7 +49,7 @@ test("newest-first ordering does not mutate the catalogue and is independent of 
   const result = filterPublications(input);
   assert.deepEqual(input.map((item) => item.id), before);
   for (let index = 1; index < result.length; index++) assert.ok(result[index - 1].date >= result[index].date);
-  assert.equal(result[0].id, "microsoft-agentic-plant-operations");
+  assert.equal(result[0].date, [...publications].map((item) => item.date).sort().at(-1));
 });
 
 test("publication dates stay on the publisher's day across time zones", () => {

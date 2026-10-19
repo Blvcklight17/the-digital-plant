@@ -1,5 +1,23 @@
 [
   {
+    "id": "abb-power-orchestration-2026",
+    "title": "Power orchestration the future of industrial competitiveness, says new ABB whitepaper",
+    "publisher": "ABB",
+    "date": "2026-09-17",
+    "verifiedOn": "2026-10-19",
+    "type": "Report announcement",
+    "topics": [
+      "Reliability",
+      "Digital transformation"
+    ],
+    "summary": "ABB's report announcement connects electrical asset management with energy resilience and operating costs. It outlines a shift toward coordinated power systems, supported by AI, digital monitoring, storage, and service models focused on uptime.",
+    "takeaway": "Map the electrical assets whose failure would stop production, then compare monitoring and maintenance investments using downtime exposure and total lifecycle cost.",
+    "context": "Vendor-authored outlook. This summary covers ABB's public announcement, not the full whitepaper; its forecasts and reported figures are not independently validated here.",
+    "url": "https://new.abb.com/news/detail/138855/power-orchestration-the-future-of-industrial-competitiveness-says-new-abb-whitepaper",
+    "relatedHref": "/tools/downtime-analyzer",
+    "relatedLabel": "Identify your downtime priorities"
+  },
+  {
     "id": "microsoft-agentic-plant-operations",
     "title": "Agentic AI for plant operations: From dashboards to decisions",
     "publisher": "Microsoft",
