@@ -1,5 +1,23 @@
 [
   {
+    "id": "schneider-us-industrial-ai-2026",
+    "title": "Schneider Electric Releases U.S. Industrial AI Data at PACK EXPO International 2026",
+    "publisher": "Schneider Electric",
+    "date": "2026-10-19",
+    "verifiedOn": "2026-10-26",
+    "type": "Research announcement",
+    "topics": [
+      "Industrial AI",
+      "Digital transformation"
+    ],
+    "summary": "Schneider Electric shares U.S. survey findings on AI adoption in consumer goods and life sciences manufacturing. The release contrasts reported deployment with estimated operational losses and argues that connected data and open automation are foundations for scaling AI.",
+    "takeaway": "Before expanding an AI pilot, document the production loss it should address and check whether data from each target line uses consistent definitions and context.",
+    "context": "Vendor-published survey announcement citing Censuswide research. This brief uses the public release, not the full report or dataset. Adoption, loss estimates, and expectations are respondent-reported, not independently verified performance results.",
+    "url": "https://www.se.com/us/en/about-us/newsroom/news/press-releases/schneider-electric-releases-u-s-industrial-ai-data-at-pack-expo-international-2026-6ad0ef226d2b144d330b23aa/",
+    "relatedHref": "/articles/how-to-start-an-industrial-ai-project",
+    "relatedLabel": "Define a measurable AI pilot"
+  },
+  {
     "id": "abb-power-orchestration-2026",
     "title": "Power orchestration the future of industrial competitiveness, says new ABB whitepaper",
     "publisher": "ABB",

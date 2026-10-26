@@ -3,7 +3,7 @@ import publications from "../../data/publications.json";
 import { siteConfig } from "../../data/site";
 
 const title = "Industry Reading Room";
-const description = "Explore industrial AI and digital transformation publications from Siemens, Microsoft, NVIDIA, Rockwell Automation, ABB, and the World Economic Forum, with practical engineering takeaways.";
+const description = "Explore industrial AI and digital transformation publications from Siemens, Microsoft, NVIDIA, Rockwell Automation, ABB, Schneider Electric, and the World Economic Forum, with practical engineering takeaways.";
 
 export const metadata = {
   title,
@@ -18,7 +18,7 @@ export default function PublicationsPage() {
     <div className="reading-room">
       <section className="reading-room-heading">
         <div className="container">
-          <div className="reading-room-edition"><span>THE DIGITAL PLANT / READING ROOM</span><span>SELECTION 02 · OCTOBER 2026</span></div>
+          <div className="reading-room-edition"><span>THE DIGITAL PLANT / READING ROOM</span><span>SELECTION 03 · OCTOBER 2026</span></div>
           <h1>Industrial intelligence.<br /><span>From the source.</span></h1>
           <p>Research, factory stories, and industry perspectives worth your time. Read our brief, take an idea back to your plant, and explore the original publication.</p>
           <div className="reading-room-counts"><span><strong>{publications.length}</strong> selected publications</span><span><strong>{new Set(publications.map((item) => item.publisher)).size}</strong> publishers</span></div>
