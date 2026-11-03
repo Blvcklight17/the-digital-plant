@@ -18,6 +18,24 @@
     "relatedLabel": "Define a measurable AI pilot"
   },
   {
+    "id": "wef-industrial-ai-long-term-planning",
+    "title": "The industrial world is running AI on the wrong clock",
+    "publisher": "World Economic Forum",
+    "date": "2026-10-12",
+    "verifiedOn": "2026-11-03",
+    "type": "Industry perspective",
+    "topics": [
+      "Industrial AI",
+      "Workforce"
+    ],
+    "summary": "Kiva Allgood and Mark Moffat argue that industrial AI planning should match the decades-long life of physical assets. They recommend specifying data architecture early, preserving operating expertise, maintaining long-term oversight, and building collaboration across suppliers.",
+    "takeaway": "For your next equipment specification, include data access and retention requirements, a plan to capture operator knowledge, and named owners for reviewing AI recommendations throughout the asset's life.",
+    "context": "An opinion article by leaders from the World Economic Forum and software supplier IFS. The recommendations express the authors' views; this is not an independent study or a measured factory case study.",
+    "url": "https://www.weforum.org/stories/artificial-intelligence/the-industrial-world-is-running-ai-on-the-wrong-clock",
+    "relatedHref": "/articles/digital-transformation-roadmap-for-factories",
+    "relatedLabel": "Plan a lasting transformation roadmap"
+  },
+  {
     "id": "abb-power-orchestration-2026",
     "title": "Power orchestration the future of industrial competitiveness, says new ABB whitepaper",
     "publisher": "ABB",
