@@ -7,7 +7,7 @@ import { filterPublications, publicationDate } from "../lib/publications.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const publications = JSON.parse(fs.readFileSync(path.join(root, "data/publications.json"), "utf8"));
-const allowedHosts = new Set(["www.microsoft.com", "news.microsoft.com", "www.weforum.org", "www.rockwellautomation.com", "nvidianews.nvidia.com", "press.siemens.com", "new.abb.com", "www.se.com"]);
+const allowedHosts = new Set(["www.microsoft.com", "news.microsoft.com", "www.weforum.org", "www.rockwellautomation.com", "nvidianews.nvidia.com", "press.siemens.com", "news.siemens.com", "new.abb.com", "www.se.com"]);
 
 test("entries have unique identifiers, verified publisher links, and real internal destinations", () => {
   assert.equal(new Set(publications.map((item) => item.id)).size, publications.length);
@@ -33,7 +33,7 @@ test("entries have unique identifiers, verified publisher links, and real intern
 });
 
 test("search handles casing, whitespace, and multiple words across fields", () => {
-  assert.deepEqual(filterPublications(publications, { query: "  SIEMENS   digital  " }).map((item) => item.id), ["siemens-nanjing-lighthouse"]);
+  assert.deepEqual(filterPublications(publications, { query: "  SIEMENS   digital   Nanjing  " }).map((item) => item.id), ["siemens-nanjing-lighthouse"]);
   assert.equal(filterPublications(publications, { query: "  " }).length, publications.length);
 });
 
