@@ -1,5 +1,23 @@
 [
   {
+    "id": "siemens-nvidia-pcb-inspection",
+    "title": "Siemens and NVIDIA advance AI-powered PCB inspection from Digital Twin to factory",
+    "publisher": "Siemens",
+    "date": "2026-10-21",
+    "verifiedOn": "2026-11-16",
+    "type": "Factory demonstration",
+    "topics": [
+      "Digital twins",
+      "Industrial AI"
+    ],
+    "summary": "Siemens describes an electronics inspection workflow demonstrated at its Erlangen factory. A digital twin of a circuit board and synthetic images support inspection preparation before physical boards are available; AI-assisted secondary inspection is intended to distinguish defects from false calls.",
+    "takeaway": "When evaluating synthetic training data for inspection, reserve real production samples for validation and measure missed defects separately from false alarms before changing acceptance decisions.",
+    "context": "Vendor announcement of a collaboration and factory demonstration with NVIDIA. Engineering-effort, false-call, and yield improvements are project targets, not independently verified achieved results.",
+    "url": "https://news.siemens.com/en-us/siemens-nvidia-pcba-digital-twin-factory/",
+    "relatedHref": "/articles/how-to-start-an-industrial-ai-project",
+    "relatedLabel": "Define an inspection pilot"
+  },
+  {
     "id": "schneider-us-industrial-ai-2026",
     "title": "Schneider Electric Releases U.S. Industrial AI Data at PACK EXPO International 2026",
     "publisher": "Schneider Electric",
